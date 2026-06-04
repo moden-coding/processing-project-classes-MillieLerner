@@ -4,7 +4,6 @@ public class redBullets {
     private float x;
     private float y;
     private PApplet canvas;
-    private int size;
     // private int track = canvas.millis();
 
     public redBullets(float xx, float yy, PApplet c) {
@@ -31,8 +30,9 @@ public class redBullets {
 
     public boolean checkpowerred(float wallX, float wallY) {
         boolean d = false;
-        if (x + 5 == wallX && y == wallY && y == wallY + 60) {
+        if (x - 5 == wallX && y == wallY && y == wallY + 60) {
             d = true;
+            System.out.println("Red is Working");
         }
         return d;
     }
@@ -43,6 +43,7 @@ public class redBullets {
         if (size > 20) {
             if (d <= 5 + (size / 2)) {
                 p = true;
+                System.out.println("Red accept");
             }
         }
         return p;
