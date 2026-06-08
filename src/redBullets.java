@@ -30,9 +30,8 @@ public class redBullets {
 
     public boolean checkpowerred(float wallX, float wallY) {
         boolean d = false;
-        if (x - 5 == wallX && y == wallY && y == wallY + 60) {
+        if (x - 5 >= wallX && y >= wallY && y <= wallY + 60) {
             d = true;
-            System.out.println("Red is Working");
         }
         return d;
     }
