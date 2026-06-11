@@ -5,6 +5,7 @@ public class blueBullets {
     private float y;
     private PApplet canvas;
 
+    //it's the same thing as the other class... just different directions and colors
     public blueBullets(float xx, float yy, PApplet c){
         x=xx;
         y=yy;
